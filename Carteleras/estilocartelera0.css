@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-div {
+.ficha {
   border: 2px solid #9B6136;
 }
 body .ficha {
@@ -14,7 +14,7 @@ body .ficha {
   position: relative;
 }
 
-img {
+.ficha img {
   width: 100px;
   height: 156.033px;
   float: left;
@@ -35,7 +35,7 @@ img {
   height: 125px;
   line-height: 125px;
 }
-p:last-child {
+.ficha p:last-child {
   color: white;
   border: 1px solid black;
   position: absolute;
