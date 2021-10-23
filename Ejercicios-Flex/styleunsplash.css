@@ -5,7 +5,7 @@
   body {
     margin: 0;
   }
-  img{
+  .row .column img{
       width: 100%;
   }
   .row {
@@ -39,7 +39,7 @@
     
 }
 
-/* Cabecera reusltado de búsqueda*/
+/* Cabecera resultado de búsqueda*/
 h2{
     padding-left:  10px; ;
     font-size: 46px;
