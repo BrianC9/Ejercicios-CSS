@@ -1,0 +1,21 @@
+body{
+    box-sizing: border-box;
+    margin: 20px 10%;
+    background-color: #E7D5A3;
+}
+.title{
+    font-weight: 800;
+    font-size: 48px;
+    
+}
+.subtitle{
+    font-size: 24px;
+    font-weight: 700px;
+}
+.subtitle +p::first-letter{
+font-size: 24px;
+
+}
+.cuerpo p{
+    
+}
