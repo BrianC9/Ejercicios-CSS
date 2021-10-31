@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-img {
+  width: 33.33%;
+  height: 220px;
+  object-fit: cover;
+  position: relative;
+}
+img {
+  padding: 5px;
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.overlay.hover1 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: calc(220px - 10px);
+  width: calc(100% - 10px);
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #005f70;
+}
+.container-img:hover .overlay {
+  opacity: 1;
+}
+.container-img.hover1 .text {
+  color: #49d9f2;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*EFECTO HOVER 2*/
+.container-img.hover2 .overlay.hover2 {
+  position: absolute;
+  left: 05px;
+  top: 05px;
+  background-color: #49704e;
+  overflow: hidden;
+  height: 0;
+  width: calc(100% - 10px);
+  transition: 0.5s ease;
+}
+.container-img.hover2:hover .overlay.hover2 {
+  height: calc(220px - 10px);
+}
+.container-img.hover2 .text {
+  background-color: #42bd52;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*EFECTO HOVER 3*/
+
+.overlay.hover3 {
+  position: absolute;
+  opacity: 0;
+  background: #665535d0;
+  bottom: 5px;
+  left: 5px;
+  text-align: center;
+  width: calc(100% - 10px);
+  font-size: 20px;
+  font-weight: 600;
+  color: #e0c89b;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+.container-img.hover3:hover .overlay.hover3 {
+  opacity: 1;
+}
+
+/*EFECTO HOVER 4*/
+.overlay.hover4 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #614946;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  overflow: hidden;
+  transform: scale(0);
+  transition: .8s ease;
+}
+
+.container-img.hover4:hover .overlay.hover4{
+  transform: scale(1);
+}
+.container-img.hover4 .text{
+  background-color: #B34A3B;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #FCBFB6;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
