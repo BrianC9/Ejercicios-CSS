@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 20px 10%;
+    background: url("noche.jpg")  content-box #000;
+    background-size: cover;
+    color: rgb(85, 255, 6);
+    font-family: 'Oswald', monospace;
+    letter-spacing: 0.2rem;
+    text-align: justify;
+}
+.title{
+    text-align: center;
+    letter-spacing: 0.4rem;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+   
+}
+.subtitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+.cuerpo{
+    line-height: 2;
+}
+.cuerpo p:nth-child(1){
+    text-orientation: upright;
+}
+.cuerpo p:last-child{
+    font-size: 24px;
+    font-weight: 500;
+ 
+}
