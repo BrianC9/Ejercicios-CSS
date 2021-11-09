@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 350px;
+}
+img:not(:first-child){
+  opacity: 0;
+}
+#cf {
+  position: relative;
+  height: 281px;
+  width: 450px;
+  margin: auto;
+}
+
+#cf img {
+  position: absolute;
+  left: 0;
+}
+#cf img:nth-child(1) {
+  animation-delay: 0s;
+}
+#cf img:nth-child(2) {
+  animation-delay: 3s;
+}
+#cf img:nth-child(3) {
+  animation-delay: 6s;
+}
+#cf img:nth-child(4) {
+  animation-delay: 9s;
+}
+#cf img:nth-child(5) {
+  animation-delay: 12s;
+}
+#cf img:nth-child(6) {
+  animation-delay: 15s;
+}
+
+#cf img {
+  animation: fader 18s linear infinite alternate;
+}
+@keyframes fader {
+  0% {
+    opacity: 0;
+  }
+  03.33% {
+    opacity: 1;
+  }
+    
+  13.33% {
+    opacity: 1;
+  }
+  16.65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
